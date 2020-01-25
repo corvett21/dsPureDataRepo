@@ -1,0 +1,15 @@
+#N canvas 442 179 450 300 10;
+#X obj 1 2 inlet~;
+#X obj 22 21 loadbang;
+#X obj 22 77 metro 1;
+#X msg 22 40 1;
+#X obj 22 59 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0 1
+;
+#X obj 1 99 snapshot~;
+#X obj 1 118 outlet;
+#X connect 0 0 5 0;
+#X connect 1 0 3 0;
+#X connect 2 0 5 0;
+#X connect 3 0 4 0;
+#X connect 4 0 2 0;
+#X connect 5 0 6 0;

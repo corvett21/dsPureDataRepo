@@ -1,0 +1,48 @@
+#N canvas -8 -8 1366 725 10;
+#X obj 125 427 *~;
+#X obj 220 427 *~;
+#X obj 175 460 +~;
+#X obj 216 150 bng 15 250 50 0 empty empty Normal 17 7 0 10 -262144
+-1 -1;
+#X obj 317 148 bng 15 250 50 0 empty empty Glitch! 17 7 0 10 -262144
+-1 -1;
+#X obj 174 151 bng 15 250 50 0 empty empty Off 17 7 0 10 -262144 -1
+-1;
+#X obj 174 286 line~;
+#X msg 174 265 0 10;
+#X msg 216 265 1 10;
+#X obj 275 286 line~;
+#X msg 275 265 0 10;
+#X msg 317 265 1 10;
+#X obj 28 18 inlet~;
+#X obj 18 284 delwrite~ \$0_main 60000;
+#X obj 55 316 delread~ \$0_main 0;
+#X obj 192 318 delread~ \$0_glitch 30;
+#X obj 200 511 delwrite~ \$0_glitch 60000;
+#X obj 246 99 inlet;
+#X obj 246 120 sel 0;
+#X obj 92 570 outlet~;
+#X obj 174 74 loadbang;
+#X connect 0 0 2 0;
+#X connect 1 0 2 1;
+#X connect 2 0 16 0;
+#X connect 2 0 19 0;
+#X connect 3 0 8 0;
+#X connect 3 0 10 0;
+#X connect 4 0 11 0;
+#X connect 4 0 7 0;
+#X connect 5 0 7 0;
+#X connect 5 0 10 0;
+#X connect 6 0 0 1;
+#X connect 7 0 6 0;
+#X connect 8 0 6 0;
+#X connect 9 0 1 1;
+#X connect 10 0 9 0;
+#X connect 11 0 9 0;
+#X connect 12 0 13 0;
+#X connect 14 0 0 0;
+#X connect 15 0 1 0;
+#X connect 17 0 18 0;
+#X connect 18 0 3 0;
+#X connect 18 1 4 0;
+#X connect 20 0 3 0;

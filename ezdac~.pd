@@ -1,0 +1,66 @@
+#N canvas -8 -8 1366 725 10;
+#X obj 251 103 cnv 15 89 93 empty empty ezdac~ 24 7 0 10 -191407 -1
+0;
+#X obj 169 128 inlet;
+#X text 169 105 level;
+#X obj 186 169 line~;
+#X obj 38 161 dac~;
+#X text 19 67 audio;
+#X obj 19 87 inlet~;
+#X obj 20 110 *~;
+#X obj 255 118 hsl 60 20 0 1 0 0 empty empty empty -2 -8 0 10 -262130
+-1 -1 0 1;
+#X msg 186 149 \$1 10;
+#X obj 319 118 tgl 20 0 empty empty empty 17 7 0 10 -262130 -1 -1 0
+1;
+#X msg 343 156 \; pd dsp \$1;
+#X obj 252 46 loadbang;
+#X msg 319 76 1;
+#X msg 252 75 0;
+#X obj 19 186 outlet~;
+#N canvas 0 0 452 324 (subpatch) 0;
+#X array \$0_array 200 float 1;
+#A 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+#X coords 0 1 199 -1 87 42 2 0 0;
+#X restore 252 155 graph;
+#X obj 141 254 tabwrite~ \$0_array;
+#X obj 141 235 metro 10;
+#X obj 19 303 s \$0_rrate;
+#X obj 186 217 r \$0_rrate;
+#X obj 141 199 loadbang;
+#X msg 141 217 1, f 2;
+#X obj 19 227 loadbang;
+#X obj 19 284 * -1;
+#X obj 19 265 - 201;
+#X msg 19 246 100;
+#X text 15 20 ezdac~;
+#X obj 253 156 cnv 15 85 40 empty empty empty 20 12 0 14 -262130 -66577
+0;
+#X connect 1 0 8 0;
+#X connect 3 0 7 1;
+#X connect 6 0 7 0;
+#X connect 6 0 17 0;
+#X connect 7 0 4 1;
+#X connect 7 0 4 0;
+#X connect 7 0 15 0;
+#X connect 8 0 9 0;
+#X connect 9 0 3 0;
+#X connect 10 0 11 0;
+#X connect 12 0 13 0;
+#X connect 12 0 14 0;
+#X connect 13 0 10 0;
+#X connect 14 0 8 0;
+#X connect 18 0 17 0;
+#X connect 20 0 18 1;
+#X connect 21 0 22 0;
+#X connect 22 0 18 0;
+#X connect 23 0 26 0;
+#X connect 24 0 19 0;
+#X connect 25 0 24 0;
+#X connect 26 0 25 0;
+#X coords 0 -1 1 1 91 99 1 250 100;
