@@ -1,0 +1,13 @@
+#N canvas 0 50 608 293 10;
+#X obj 12 108 bigscope~;
+#X obj 12 87 osc~ 689;
+#X text 36 21 bigscope~;
+#X text 203 31 Does what it says. Audio inlet \, pass-through outlet
+is the same as the inlet.;
+#X text 273 76 See Also:;
+#X obj 277 117 medscope~;
+#X text 300 100 medscope~;
+#X obj 440 171 ezscope~;
+#X text 465 139 ezscope~;
+#X text 307 255 David Sprinkle;
+#X connect 1 0 0 0;

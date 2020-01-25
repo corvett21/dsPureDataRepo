@@ -1,0 +1,15 @@
+#N canvas 0 50 450 300 10;
+#X text 60 36 For fast patching \, [automet] is a metro object that
+is loaded already spitting out bangs.;
+#X obj 204 178 automet 250;
+#X obj 204 206 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 151 119 1;
+#X msg 183 119 0;
+#X text 109 93 Takes the same inlets as [metro];
+#X floatatom 288 122 5 0 0 0 - - -;
+#X text 177 271 David Sprinkle;
+#X connect 1 0 2 0;
+#X connect 3 0 1 0;
+#X connect 4 0 1 0;
+#X connect 6 0 1 1;

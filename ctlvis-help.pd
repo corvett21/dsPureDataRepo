@@ -1,0 +1,8 @@
+#N canvas 0 50 450 300 10;
+#X obj 128 109 ctlvis;
+#X text 33 27 ctlvis;
+#X text 70 49 Shows the inputs of midi cc inputs from 0 to 64 0-32
+are shown as sliders \, and 33-64 are shown as buttons. This was designed
+to work with the Akai LPD8 \, with its control layers each being shown
+as a different slice.;
+#X text 296 263 David Sprinkle;

@@ -1,0 +1,11 @@
+#N canvas 0 50 450 300 10;
+#X obj 183 109 autosnap~;
+#X floatatom 183 130 5 0 0 0 - - -;
+#X text 48 23 Every Millisecond \, [autosnap~] does a snapshot of the
+incoming audio-rate signal to a k-rate signal.;
+#X obj 183 87 osc~ 0.01;
+#X text 234 132 Outlet: Control-Rate Signal;
+#X text 253 83 Inlet: Audio-Rate signal;
+#X text 142 265 David Sprinkle;
+#X connect 0 0 1 0;
+#X connect 3 0 0 0;

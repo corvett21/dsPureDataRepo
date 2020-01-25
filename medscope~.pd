@@ -32,8 +32,8 @@
 #X restore 31 20 graph;
 #X obj 274 79 inlet~;
 #X obj 274 159 tabwrite~ \$0_array;
-#X obj 34 87 hsl 95 14 1 200 0 0 empty empty Refresh Rate 8 -8 0 10
--262113 -1 -1 4676 1;
+#X obj 34 87 hsl 95 15 0 127 0 0 empty empty Refresh -2 -8 0 10 -262144
+-1 -1 7900 1;
 #X obj 319 121 metro 10;
 #X obj 32 221 s \$0_rrate;
 #X obj 364 99 r \$0_rrate;

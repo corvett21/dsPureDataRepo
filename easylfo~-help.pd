@@ -1,0 +1,10 @@
+#N canvas 0 50 450 300 10;
+#X obj 121 105 noise~;
+#X obj 120 161 ezscope~;
+#X obj 121 126 easylfo~ 0.5;
+#X text 23 18 easylfo~;
+#X text 83 51 A not-powerful easy lfo that takes one argument: LFO
+speed in Hz. It's designed for quick patching or prototyping.;
+#X text 167 266 David Sprinkle;
+#X connect 0 0 2 0;
+#X connect 2 0 1 0;
