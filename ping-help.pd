@@ -1,0 +1,19 @@
+#N canvas 0 50 450 300 10;
+#X obj 67 73 loadbang;
+#X msg 67 94 1;
+#X obj 67 115 metro 300;
+#X obj 67 157 *~;
+#X obj 67 178 ezdac~;
+#X obj 157 149 noise~;
+#X obj 67 136 ping 150 1;
+#X text 30 20 [ping] takes a bang to its inlet \, and sends out a linear
+envelope from \$2 to 0 over \$1 milliseconds. This can be passed through
+a [pow~] if you'd like to make an exponential ramp rather than a linear
+one.;
+#X text 238 242 David Sprinkle;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 2 0 6 0;
+#X connect 3 0 4 0;
+#X connect 5 0 3 1;
+#X connect 6 0 3 0;

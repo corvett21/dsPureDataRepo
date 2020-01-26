@@ -1,0 +1,19 @@
+#N canvas 0 50 516 401 10;
+#X obj 152 221 notevis_poly;
+#X obj 112 140 notein;
+#X obj 112 161 pack f f;
+#X obj 200 100 midikeyboard;
+#X obj 200 165 pack f f;
+#X text 219 203 notevis_poly;
+#X text 50 44 notevis_poly takes a packed note-velocity message to
+the left inlet \, and turns on and off the corresponding key light
+\, not affected by octave.;
+#X obj 71 334 notevis_mono;
+#X text 67 310 See Also: notevis_mono;
+#X text 372 335 David Sprinkle;
+#X connect 1 0 2 0;
+#X connect 1 1 2 1;
+#X connect 2 0 0 0;
+#X connect 3 0 4 0;
+#X connect 3 1 4 1;
+#X connect 4 0 0 0;

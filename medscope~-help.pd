@@ -1,0 +1,12 @@
+#N canvas 0 50 450 455 10;
+#X obj 37 50 osc~ 689.063;
+#X obj 37 71 medscope~;
+#X text 149 103 oscilloscope shows audio input;
+#X text 45 174 Audio throughput to an outlet;
+#X text 62 23 medscope~ is a medium-sized oscilloscope;
+#X obj 70 288 bigscope~;
+#X obj 292 341 ezscope~;
+#X text 147 233 See also:;
+#X text 124 268 bigscope~;
+#X text 321 313 ezscope~;
+#X connect 0 0 1 0;

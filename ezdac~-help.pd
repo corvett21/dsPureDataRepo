@@ -1,0 +1,17 @@
+#N canvas 0 50 821 533 10;
+#X obj 132 160 ezdac~;
+#X text 87 129 Left Inlet: Audio Signal;
+#X text 213 126 Right Inlet: Volume (0 to 1);
+#X text 44 264 Outlet: Throughput of the Input \, for recording or
+whatever else you may want;
+#X text 43 41 ezdac~ is something that needs to exist. It has an oscilloscope
+to show what's going through \, a volume slider and toggle \, and throughput
+to record from if you'd like. The volume is smoothed to change at signal
+rate \, so there won't be any discontinuities.;
+#X text 278 334 See Also:;
+#X obj 245 372 ezstereo~;
+#X text 201 354 ezstereo~ - the stereo version;
+#X obj 454 390 record_mono~;
+#X obj 560 389 record_stereo~;
+#X text 467 364 record_mono~;
+#X text 572 366 record_stereo;

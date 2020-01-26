@@ -1,0 +1,17 @@
+#N canvas 0 50 596 429 10;
+#X obj 175 180 flanger~;
+#X obj 131 105 noise~;
+#X obj 180 300 ezdac~;
+#X text 79 34 flanger~;
+#X text 299 194 Inlet 1: Audio Signal Inlet 2: Latency (Default: 10ms)
+Inlet 3: Frequency in Hz (default: 0.3) Inlet 4: Depth/Width (Default:
+1);
+#X obj 227 117 hsl 128 15 0 1 0 0 empty empty Slider_0_to_1 -2 -8 0
+10 -262144 -1 -1 0 1;
+#X obj 265 149 hsl 128 15 0 10 0 0 empty empty Slider_0_to_10 -2 -8
+0 10 -262144 -1 -1 0 1;
+#X text 375 294 David Sprinkle;
+#X connect 0 0 2 0;
+#X connect 1 0 0 0;
+#X connect 5 0 0 2;
+#X connect 6 0 0 3;

@@ -1,0 +1,16 @@
+#N canvas 0 50 555 494 10;
+#X obj 165 171 ezscope~;
+#X obj 166 122 osc~ 689.063;
+#X text 196 141 ezscope~;
+#X text 36 29 ezscope~ is a no-frills oscilloscope that shows the audio
+signal you plug into it. There's an outlet if you want to pass the
+signal through to something else.;
+#X text 161 297 see also:;
+#X obj 57 348 bigscope~;
+#X text 95 327 bigscope~;
+#X obj 255 355 medscope~;
+#X text 273 338 medscope~;
+#X obj 398 372 stereoscope~;
+#X text 417 352 stereoscope~;
+#X text 401 236 David Sprinkle;
+#X connect 1 0 0 0;

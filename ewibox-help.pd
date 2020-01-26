@@ -1,0 +1,8 @@
+#N canvas 0 50 450 300 10;
+#X obj 136 64 ewibox;
+#X text 185 35 [ewibox];
+#X text 39 176 Ewibox shows midi input data: notes (but not octave)
+\, the blue slider is CC2 \, which is usually what EWI instruments
+use for breath. The Red slider is CC16 \, which I always map the bite/vibrato
+sensor to.;
+#X text 172 273 David Sprinkle;

@@ -1,0 +1,16 @@
+#N canvas 0 50 550 381 10;
+#X obj 120 103 notevis_mono;
+#X obj 250 68 bng 15 250 50 0 empty empty Reset 17 7 0 10 -262144 -1
+-1;
+#X floatatom 161 68 5 0 0 0 - - -;
+#X text 143 37 notevis_mono;
+#X text 84 174 Takes an integer to the left inlet and displays it as
+a position on a midi keyboard. To clear the visual \, send a bang to
+the right inlet.;
+#X obj 99 67 notein;
+#X text 343 22 David Sprinkle;
+#X obj 165 296 notevis_poly;
+#X text 165 277 See also: notevis_poly;
+#X connect 1 0 0 1;
+#X connect 2 0 0 0;
+#X connect 5 0 0 0;

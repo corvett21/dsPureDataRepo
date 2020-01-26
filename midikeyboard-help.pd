@@ -1,0 +1,13 @@
+#N canvas 0 50 450 300 10;
+#X obj 161 120 midikeyboard;
+#X text 137 99 inlet 0 to 4 sets the octave;
+#X text 55 28 midikeyboard sends noteon and noteoff messages \, with
+matching outlets to [notein]. It turns your qwerty keyboard into a
+virtual piano keyboard.;
+#X floatatom 161 212 5 0 0 0 - - -;
+#X floatatom 212 212 5 0 0 0 - - -;
+#X floatatom 264 213 5 0 0 0 - - -;
+#X text 209 269 David Sprinkle;
+#X connect 0 0 3 0;
+#X connect 0 1 4 0;
+#X connect 0 2 5 0;

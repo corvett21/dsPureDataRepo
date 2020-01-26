@@ -1,0 +1,30 @@
+#N canvas 0 50 531 416 10;
+#X obj 119 96 phasor~ 689.063;
+#X obj 118 117 *~ 2;
+#X obj 118 138 -~ 1;
+#X obj 119 169 ezscope~;
+#X obj 120 230 fatten~;
+#X obj 118 267 ezscope~;
+#X obj 264 247 fatten~;
+#X obj 264 276 ezscope~;
+#X text 240 107 Inlet~ 1 = Signal;
+#X text 240 161 Numbers between 0 and 1 do weird things;
+#X text 75 50 Sorta like changing a circle to a "super elipse" but
+with whatever power you like.;
+#X text 64 26 fatten~ does a Nth Root transformation to fatten the
+sounds;
+#X obj 296 209 hsl 100 15 1 10 0 0 empty empty Slider_0_to_10 -2 -8
+0 10 -262144 -1 -1 0 1;
+#X floatatom 311 228 5 0 0 0 - - -;
+#X text 214 358 David Sprinkle;
+#X text 240 129 Inlet 2 = Amount \, a real number >= 1 Default Value
+is 2;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 3 0 4 0;
+#X connect 3 0 6 0;
+#X connect 4 0 5 0;
+#X connect 6 0 7 0;
+#X connect 12 0 13 0;
+#X connect 12 0 6 1;

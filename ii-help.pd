@@ -1,0 +1,9 @@
+#N canvas 0 50 450 300 10;
+#X obj 135 73 ii 30;
+#X floatatom 135 94 5 0 0 0 - - -;
+#X text 61 36 [ii] initializes a value (it stands for InItialize).
+It simply bangs out argument1 on loadbang.;
+#X text 60 215 I'm pretty sure someone has made this exact object before
+\, and another called [init] \, but I don't know what repos they are
+a part of;
+#X connect 0 0 1 0;

@@ -1,0 +1,17 @@
+#N canvas 0 50 567 579 10;
+#X obj 154 128 ezstereo~;
+#X text 53 18 ezstereo~ is a built-up version of [dac~];
+#X text 88 93 First Two Inlets: Left and Right Audio;
+#X text 241 91 Third Inlet: Volume (0 to 1);
+#X text 263 146 Volume Slider and On/Off Toggle;
+#X text 56 241 Left and Right Audio Through-puts for recording or anything
+else you'd like to do with it;
+#X text 335 49 David Sprinkle;
+#X text 213 343 See Also:;
+#X text 104 385 ezdac~;
+#X obj 82 410 ezdac~;
+#X text 258 192 Oscilloscopes for the Left and Right Channels;
+#X obj 234 414 record_stereo~;
+#X text 238 396 record_stereo~;
+#X text 384 398 record_mono~;
+#X obj 376 416 record_mono~;

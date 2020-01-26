@@ -1,0 +1,5 @@
+#N canvas 0 50 450 300 10;
+#X obj 187 183 ezdelay~;
+#X text 53 109 ezdelay~ is a no-frills multitap /bouncing ball delay
+\, with an interval of 500 milliseconds. Great for adding atmosphere
+\, but if you'd like to customize it \, crack it open.;
