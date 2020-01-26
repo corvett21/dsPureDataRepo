@@ -1,4 +1,4 @@
-#N canvas 0 50 450 300 10;
+#N canvas 0 50 464 405 10;
 #X obj 225 153 bitcrusher~;
 #X obj 118 204 ezscope~;
 #X obj 167 97 osc~ 689.063;
@@ -9,6 +9,9 @@
 #X text 38 35 This doesn't *exactly* change the bitrate \, but it forces
 the audio into steps. The right inlet (plus 1) determines the number
 of steps the audio fits into.;
+#X obj 79 332 samplecrusher~;
+#X text 95 311 See also:;
+#X text 312 351 David Sprinkle;
 #X connect 0 0 3 0;
 #X connect 2 0 0 0;
 #X connect 2 0 1 0;

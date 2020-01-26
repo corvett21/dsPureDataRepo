@@ -1,30 +1,32 @@
 #N canvas 188 0 958 658 10;
-#X obj 102 102 bng 15 250 50 0 empty empty Save_To 17 7 0 10 -262144
+#X obj 101 102 cnv 15 93 70 empty empty record_mono~ 12 8 0 10 -228856
+-1 0;
+#X obj 102 122 bng 15 250 50 0 empty empty Save_To 17 7 0 10 -262144
 -1 -1;
-#X obj 102 119 bng 15 250 50 0 empty empty Start_Record 17 7 0 10 -262144
+#X obj 102 139 bng 15 250 50 0 empty empty Start_Record 17 7 0 10 -262144
 -1 -1;
-#X obj 102 136 bng 15 250 50 0 empty empty Stop_Record 17 7 0 10 -262144
+#X obj 102 156 bng 15 250 50 0 empty empty Stop_Record 17 7 0 10 -262144
 -1 -1;
-#X msg 45 167 start;
-#X msg 86 168 stop;
-#X obj 32 121 savepanel;
-#X msg 32 144 open \$1;
-#X obj 90 195 inlet~;
-#X obj 32 223 writesf~ 1;
-#X obj 126 227 outlet~;
-#X obj 261 220 inlet;
-#X obj 315 237 inlet;
-#X obj 367 247 inlet;
-#X connect 0 0 5 0;
-#X connect 1 0 3 0;
+#X msg 45 187 start;
+#X msg 86 188 stop;
+#X obj 32 141 savepanel;
+#X msg 32 164 open \$1;
+#X obj 90 215 inlet~;
+#X obj 32 243 writesf~ 1;
+#X obj 126 247 outlet~;
+#X obj 261 240 inlet;
+#X obj 315 257 inlet;
+#X obj 367 267 inlet;
+#X connect 1 0 6 0;
 #X connect 2 0 4 0;
-#X connect 3 0 8 0;
-#X connect 4 0 8 0;
-#X connect 5 0 6 0;
-#X connect 6 0 8 0;
-#X connect 7 0 8 0;
+#X connect 3 0 5 0;
+#X connect 4 0 9 0;
+#X connect 5 0 9 0;
+#X connect 6 0 7 0;
 #X connect 7 0 9 0;
-#X connect 10 0 0 0;
+#X connect 8 0 9 0;
+#X connect 8 0 10 0;
 #X connect 11 0 1 0;
 #X connect 12 0 2 0;
-#X coords 0 -1 1 1 95 53 2 100 100;
+#X connect 13 0 3 0;
+#X coords 0 -1 1 1 95 74 2 100 100;

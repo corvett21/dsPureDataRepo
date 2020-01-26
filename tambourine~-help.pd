@@ -1,0 +1,27 @@
+#N canvas 0 50 495 374 10;
+#X obj 154 195 tambourine~;
+#X obj 205 94 loadbang;
+#X msg 205 115 1;
+#X obj 205 136 metro 500;
+#X obj 205 157 t b b;
+#X obj 249 196 random 50;
+#X obj 249 217 / 50;
+#X obj 249 238 + 0.5;
+#X obj 154 216 *~;
+#X obj 154 237 ezdac~;
+#X text 75 9 tambourine~ was not born out of an attempt to emulate
+the instrument of the same name \, but was stumbled upon accidentally
+when messing with samplerates of audio. It's not a perfect instrument
+by any means \, but it does have an interesting sound.;
+#X text 28 174 Bang generates a pulse;
+#X text 338 342 David Sprinkle;
+#X connect 0 0 8 0;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 3 0 4 0;
+#X connect 4 0 0 0;
+#X connect 4 1 5 0;
+#X connect 5 0 6 0;
+#X connect 6 0 7 0;
+#X connect 7 0 8 1;
+#X connect 8 0 9 0;

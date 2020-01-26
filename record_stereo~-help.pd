@@ -1,0 +1,31 @@
+#N canvas 0 50 450 539 10;
+#X obj 162 244 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 162 261 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 162 278 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 56 222 osc~ 689.063;
+#X text 170 480 David Sprinkle;
+#X text 25 25 record_stereo~ takes an audio signal to its left two
+inlets. The other 3 inlets receive bangs to activate the buttons in
+order. In order to record with this abstraction \, first \, click "save
+to" and choose a destination. Then \, hit "Start Record" to start recording
+\, and "Stop Record" to finish. Go through the buttons in the order
+vertically on the screen. Again \, you can bang them through the inlets
+if you want a specific process to start or stop the recording. To do
+a new recording \, click "Save To" and begin again. The Outlets are
+a throughput of what is being recorded \, so you can throw it to your
+dac~ or do anything else with it you wish.;
+#X text 268 252 See also: record_mono~;
+#X obj 281 280 record_mono~;
+#X obj 57 300 record_stereo~;
+#X obj 57 379 stereoscope~;
+#X obj 78 242 osc~ 698.063;
+#X connect 0 0 8 2;
+#X connect 1 0 8 3;
+#X connect 2 0 8 4;
+#X connect 3 0 8 0;
+#X connect 8 0 9 0;
+#X connect 8 1 9 1;
+#X connect 10 0 8 1;

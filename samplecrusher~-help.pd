@@ -1,0 +1,21 @@
+#N canvas 484 246 450 420 10;
+#X obj 79 90 osc~ 689.063;
+#X obj 79 123 ezscope~;
+#X obj 77 241 ezscope~;
+#X obj 184 184 hsl 128 15 2000 20000 0 0 empty empty slider_2k_to_20k
+-2 -8 0 10 -262144 -1 -1 6100 1;
+#X obj 78 211 samplecrusher~;
+#X floatatom 181 204 7 0 0 0 - - -;
+#X text 47 11 samplecrusher~ artificially lowers the samplerate of
+incoming audio. The left inlet is the signal to crush \, and the right
+inlet takes a new samplerate in Hz. It doesn't actually change the
+samplerate of anything computationally \; it just causes the signal
+to sample-and-hold at the specified rate.;
+#X obj 58 361 bitcrusher~;
+#X text 61 337 See Also:;
+#X text 247 360 David Sprinkle;
+#X connect 0 0 1 0;
+#X connect 1 0 4 0;
+#X connect 3 0 4 1;
+#X connect 3 0 5 0;
+#X connect 4 0 2 0;
