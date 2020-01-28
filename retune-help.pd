@@ -1,0 +1,30 @@
+#N canvas 0 50 615 472 10;
+#X obj 23 74 retune;
+#X floatatom 88 43 5 0 0 0 - - -;
+#X obj 23 19 notein;
+#X obj 23 40 stripnote;
+#X obj 23 239 mtof;
+#X floatatom 23 260 5 0 0 0 - - -;
+#X text 167 31 Retune takes a midi note number (i or f) and "retunes"
+it to a different tuning system. There's a wonderful wikipedia article
+about the Carlos Alpha and Carlos Beta scales developed by Wendy Carlos
+for her album Beauty in the Beast \, and I've found they're great fun
+to improv over. I personally hate the Bohlen-Pierce temperment \, which
+stretches the octave to a ratio of 3:1 instead of 2:1. 19 EDO is sort
+of the opposite: it compressed an octave and a fifth down to one octave
+\, where there's 3 3rd tones per whole step.;
+#X text 160 305 The values coming out of the outlet are floats. They
+can be run through [mtof] to get to the target frequencies for your
+new tuning system.;
+#X text 168 200 The second inlet takes an interger 0 to 4 to select
+a tuning scale.;
+#X text 166 239 The Third inlet sets the "pivot" note around which
+the notes are rescaled. It will stay fixed to our A440 tuning system.
+;
+#X text 214 403 David Sprinkle;
+#X connect 0 0 4 0;
+#X connect 1 0 0 0;
+#X connect 2 0 3 0;
+#X connect 2 1 3 1;
+#X connect 3 0 0 0;
+#X connect 4 0 5 0;

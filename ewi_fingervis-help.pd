@@ -1,0 +1,11 @@
+#N canvas 0 50 664 435 10;
+#X obj 69 84 ewi_fingervis;
+#X text 42 46 ewi_fingervis;
+#X text 148 92 This object does not take any inlets or outlets. It
+has a builtin notein to get the midi data from an EWI \, and if you
+are playing \, will display the fingering (or a fingering) for the
+note being played. When the breath sensor is 0 \, it will clear the
+display. C# also shows as blank.;
+#X text 173 322 See also: ewi_fingervisbig;
+#X obj 358 332 ewi_fingervisbig;
+#X text 412 284 David Sprinkle;

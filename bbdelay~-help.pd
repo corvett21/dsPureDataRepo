@@ -1,0 +1,13 @@
+#N canvas 0 50 450 300 10;
+#X obj 47 97 adc~;
+#X obj 47 118 bbdelay~;
+#X obj 47 139 ezdac~;
+#X obj 105 89 hsl 128 15 100 1000 0 0 empty empty Slider_100-1000 -2
+-8 0 10 -262144 -1 -1 0 1;
+#X text 45 26 bbdelay~ takes the audio signal and makes a "bouncing
+ball" delay \, where each "bounce" is exponentially softer \, to 4
+bounces. It also delays the sound by 0.1 milliseconds.;
+#X text 238 151 David Sprinkle;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 3 0 1 1;

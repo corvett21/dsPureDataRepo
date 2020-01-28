@@ -1,0 +1,14 @@
+#N canvas 0 50 728 550 10;
+#X obj 26 38 ewi_fingervisbig;
+#X text 38 15 ewi_fingervisbig;
+#X text 184 86 This object takes no inlets or outlets. It has the notein
+it needs builtin. If you are playing a note on an EWI \, it will show
+the fingering (or a fingering) for the note displayed. If Midi CC is
+0 \, or if you are playing a C# \, it will show blank.;
+#X text 184 213 The fingering shown is based on the midi note value.
+This patch has no way to actually know what fingering you are using
+to produce that note. It just shows *a* fingering you could be using
+to produce that note.;
+#X text 231 359 See also: ewi_fingervis;
+#X obj 385 309 ewi_fingervis;
+#X text 506 429 David Sprinkle;

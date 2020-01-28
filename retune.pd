@@ -1,0 +1,64 @@
+#N canvas -8 -8 1370 729 10;
+#X obj 101 102 cnv 15 98 156 empty empty retune 22 10 0 14 -191407
+-1 0;
+#X obj 271 433 inlet;
+#X obj 271 454 - 59;
+#X obj 271 475 / 100;
+#X obj 271 566 * 100;
+#X obj 271 587 + 59;
+#X obj 271 608 outlet;
+#X msg 375 510 100;
+#X msg 413 511 77.965;
+#X obj 389 447 inlet;
+#X msg 467 508 63.833;
+#X obj 337 400 loadbang;
+#X msg 521 515 146.304;
+#X msg 584 518 1200;
+#X obj 584 539 / 19;
+#X obj 111 143 vradio 10 1 0 5 \$0_n1 \$0_n2 empty 0 -8 0 10 -262144
+-1 -1 0;
+#X obj 122 183 cnv 5 1 1 empty empty 19_EDO 0 5 0 8 -191407 -1 0;
+#X obj 389 468 sel 0 1 2 3 4 5 6;
+#X obj 134 211 nbx 2 20 -1e+037 1e+037 0 0 \$0_n3 \$0_n4 Pivot_Note
+-12 -8 0 10 -262144 -1 -1 60 256;
+#X obj 349 232 loadbang;
+#X msg 349 253 60;
+#X obj 399 337 - 1;
+#X obj 129 126 cnv 15 1 1 empty empty Scale 0 10 0 12 -191407 -1 0
+;
+#X floatatom 105 238 5 0 0 1 New_Note #0_n6 #0_n5;
+#X obj 122 173 cnv 5 1 1 empty empty Bohlen-Pierce 0 5 0 8 -191407
+-1 0;
+#X obj 122 163 cnv 5 1 1 empty empty Carlos-Beta 0 5 0 8 -191407 -1
+0;
+#X obj 122 153 cnv 5 1 1 empty empty Carlos-Alpha 0 5 0 8 -191407 -1
+0;
+#X obj 122 143 cnv 5 1 1 empty empty 12-Tone 0 5 0 8 -191407 -1 0;
+#X obj 671 534 inlet;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 3 0 4 0;
+#X connect 4 0 5 0;
+#X connect 5 0 6 0;
+#X connect 7 0 4 1;
+#X connect 8 0 4 1;
+#X connect 9 0 17 0;
+#X connect 9 0 15 0;
+#X connect 10 0 4 1;
+#X connect 11 0 7 0;
+#X connect 12 0 4 1;
+#X connect 13 0 14 0;
+#X connect 14 0 4 1;
+#X connect 15 0 17 0;
+#X connect 17 0 7 0;
+#X connect 17 1 8 0;
+#X connect 17 2 10 0;
+#X connect 17 3 12 0;
+#X connect 17 4 13 0;
+#X connect 18 0 21 0;
+#X connect 19 0 20 0;
+#X connect 20 0 18 0;
+#X connect 21 0 2 1;
+#X connect 21 0 5 1;
+#X connect 28 0 18 0;
+#X coords 0 -1 1 200 100 160 2 100 100;
